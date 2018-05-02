@@ -1,38 +1,44 @@
-#Harjoitus 5
+# Harjoitus 5
 
-##a) Valitse aihe omaksi kurssityöksi ja varaa se kommenttina aikataulusivun perään.
+## a) Valitse aihe omaksi kurssityöksi ja varaa se kommenttina aikataulusivun perään.
 
 Valitsin moduulin aiheeksi Teamspeak 3 VoIP palvelimen asennuksen salttia hyödyntäen.
 
 
-##b) Julkaise raportti MarkDownilla. Toteutuu c) kohdassa.
+## b) Julkaise raportti MarkDownilla. Toteutuu c) kohdassa.
 
-##c) Aja oma Salt-tila suoraan git-varastosta.
+## c) Aja oma Salt-tila suoraan git-varastosta.
 
 Harjoitus tehty Lenovo Ideapad 700 kannettavalla, jossa Kubuntu 18.04 LTS.
 
-###Asennetaan sekä konfiguroidaan Salt-Master sekä minion.
+### Asennetaan sekä konfiguroidaan Salt-Master sekä minion.
 
 Aloitetaan päivittämällä paketit
+
 	sudo apt-get update && upgrade
 
 Sitten asennamme Salt-masterin sekä minionin.
+
 	sudo apt-get install salt-master salt-master
 
 Lisäämme masterille minionin.
+
 	sudoedit /etc/salt/minion
 	master: [IP-osoite]
 	id: test1
 
 Poistamme file_ignore_glob varoituksen salt-masterilta
+
 	sudoedit /etc/salt/master
 	file_ignore_glob: []
 
 Sitten käynnistämme masterin sekä minionin jotta muutokset tulevat voimaan.
+
 	sudo systemctl restart salt-minion.service
 	sudo systemctl restart salt-master.service
 
 Hyväksymme minionin avaimen,
+
 	~$ sudo salt-key -A
 	The following keys are going to be accepted:
 	Unaccepted Keys:
@@ -40,16 +46,19 @@ Hyväksymme minionin avaimen,
 	Proceed? [n/Y] y
 	Key for minion test1 accepted.
 
-###Kloonataan tila git-varastosta ja ajetaan se.
+### Kloonataan tila git-varastosta ja ajetaan se.
 
 Kloonataan tila omasta varastosta komennolla
+
 	git clone https://github.com/kristiansyrjanen/teststate.git
 
 Mennään hakemistoon teststate ja siirretään se /srv/ hakemiston alle.
+
 	cd teststate
 	sudo mv salt/ /srv/
 
 Seuraavaksi ajetaan tila.
+
 	sudo salt '*' state.highstate
 
 	test1:
