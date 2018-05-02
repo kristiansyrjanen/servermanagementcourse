@@ -19,7 +19,7 @@ Aloitetaan päivittämällä paketit
 
 Sitten asennamme Salt-masterin sekä minionin.
 
-	sudo apt-get install salt-master salt-master
+	sudo apt-get install salt-master salt-minion
 
 Lisäämme masterille minionin.
 
