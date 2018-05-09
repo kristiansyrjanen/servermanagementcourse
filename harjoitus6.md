@@ -95,7 +95,7 @@ Palvelin toimii.
 
 ## [c) Käyttäjätarina (user story): ketkä ovat modulisi käyttäjät? Mitä he haluavat saada aikaan modulillasi? Missä tilanteessa he sitä käyttävät? Mitkä ovat tärkeimmät parannukset käyttäjän kannalta, joita moduliin pitäisi vielä tehdä?](http://terokarvinen.com/2018/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p)
 
-
+Moduulini sopii kenelle tahansa oman VoIP palvelimen tarvitsevalle. Loin skriptin joka tekee koko asennuksen käyttäjän puolesta. Se on nopea tapa saada VoIP palvelua tarvitsevalle itse ylläpidetty versio pystyyn. Kätevä vaikkapa LAN-turnauksen järjestäjälle. Moduuli pitäisi saada tehtyä siten että se toimisi muulla tavalla kuin Livetikulla... Tai toimiihan tila perjaatteessa missä vain jos käyttäjä osaa itse vaihtaa tarvittavat kohdat skriptistä.
 
 
 References: 
