@@ -83,7 +83,7 @@ Ajetaan Salt-tila Minionilla.
     sudo salt 'teamspeak' state.highstate
 
 Tila näyttää siltä että se ei suoriutuisi mutta tosiasiassa Teamspeak 3 palvelin on pystyssä ja siihen voi yhdistäytyä. Scriptini ei vain suostu sulkemaan/poistumaan "ts3serve_startscript.sh" ruudusta.
-[[https://i.imgur.com/fRmCWqC.png|alt=ts3connectionworks]]
+![TS3 Palvelin pystyssä](https://i.imgur.com/fRmCWqC.png)
 
 ## [c) Käyttäjätarina (user story): ketkä ovat modulisi käyttäjät? Mitä he haluavat saada aikaan modulillasi? Missä tilanteessa he sitä käyttävät? Mitkä ovat tärkeimmät parannukset käyttäjän kannalta, joita moduliin pitäisi vielä tehdä?](http://terokarvinen.com/2018/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p)
 
