@@ -10,4 +10,5 @@
 References: 
 
 [https://github.com/kristiansyrjanen](https://github.com/kristiansyrjanen)
+
 [TeroKarvinen.com - Palvelinten Hallinta](http://terokarvinen.com/2018/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p)
