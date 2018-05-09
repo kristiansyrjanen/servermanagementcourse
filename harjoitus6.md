@@ -84,7 +84,7 @@ Ajetaan Salt-tila Minionilla.
 
 *Tila näyttää siltä että se ei suoriutuisi mutta tosiasiassa Teamspeak 3 palvelin on pystyssä ja siihen voi yhdistäytyä. Scriptini ei vain suostu sulkemaan/poistumaan "ts3serve_startscript.sh" ruudusta.*
 
-KORJATTU, kirjoitusvirhe bash-scriptissä joka ei yhdistänyt **ts3serve_startscript**-scriptiä **/etc/init.d/teamspeak**:n. Joten Teamspeak 3 demoni käynnistetään aivan niinkuin mikä tahansa demoni...
+KORJATTU, kirjoitusvirhe bash-scriptissä joka ei yhdistänyt **ts3serve_startscript**-scriptiä **/etc/init.d/teamspeak**:n. Joten Teamspeak 3 demoni saadaan nyt käynnistettyä aivan niinkuin mikä tahansa muukin demoni...
 
         sudo systemctl start teamspeak 
 
